@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<section id="intro">
+    <header>
+        <a href="/">
+            <img src="/logo.png" alt="imagens da logomarca">
+        </a>
+    </header>
+
+    <main>
+        <p>
+            Ficar em casa em períodos longos, não deve ser nada fácil.
+        </p>
+
+        <p>
+            Iremos catalogar ideias, <strong> brincadeiras, jogos, filmes, livros, cursos,
+            dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+        </p>
+
+        <p>
+            Comece clicando em ver ideias para ver as  
+            ideias cadastradas e contribua adicioando a sua ideia.
+        </p>
+    </main>
+
+
+    <section id="buttons">
+        <button onclick="onOff()"> Adicionar Ideia </button>
+        <a href="/ideias" class="button"> Ver ideias </a>
+    </section>
+
+    
+    <footer>
+        <a href="https://github.com/nicholasscabral" target="_blank">Github</a>
+    </footer>
+    
+</section>
+
+<section id="ideias">
+    {% include "all_ideas.html" %}
+</section>
+
+{% endblock %}

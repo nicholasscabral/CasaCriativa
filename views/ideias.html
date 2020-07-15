@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% set bodyId = "page-ideas" %}
+   
+
+{% block title %}
+    <title>Ideias - casa criativa</title>
+{% endblock %}
+   
+
+        
+{% block content %}
+<header>
+    <a href="/">
+        <img src="/logo.png" alt="imagens da logomarca">
+    </a>
+    <nav>
+        <li><a href="/">Inicio</a></li>
+        <li><a class="button" href="#" onclick="onOff()">Nova ideia</a></li>
+    </nav>
+</header>
+<section id="title">
+    <p>em exibilçao</p>
+    <h1>ideias</h1>
+</section>
+<main>
+    <section id="ideas">
+        {% include "all_ideas.html" %}
+    </section>
+</main>
+<footer>
+    <a href="https://github.com/nicholasscabral" target="_blank">Github</a>
+</footer>
+{% endblock %}
+    
